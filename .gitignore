@@ -1,0 +1,16 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Vector DB & Temp files
+chroma/
+*.pdf
+temp.pdf
+
+# Environment Variables & Keys
+.env
