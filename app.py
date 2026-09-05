@@ -57,10 +57,10 @@ with st.sidebar:
             st.session_state.retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
             llm = ChatGroq(
-                model_name="openai/gpt-oss-120b",
-                temperature=0.1,
-                max_tokens=300
-            )
+             model_name="openai/gpt-oss-120b",
+             temperature=0.1,
+             max_tokens=None
+     )
 
             system_prompt = (
                 "You are a helpful and intelligent assistant. "
